@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #202124;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+/* Header */
+
+header {
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+
+.link-header {
+  font-size: 13px;
+  color: #000000de;
+  text-decoration: none;
+}
+
+.link-header:hover {
+  text-decoration: underline;
+}
+
+.produtos {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  fill: #5f6368;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.produtos:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+.produtos:hover::after {
+  position: absolute;
+  content: "Google Apps";
+  border-radius: 4px;
+  background-color: #4f5355;
+  font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 5px 10px;
+  width: max-content;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 5px);
+}
+
+.botao-header {
+  font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
+  background-color: #1a73e8;
+  color: white;
+  font-weight: 500;
+  padding: 9px 29px;
+  border-radius: 4px;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.botao-header:hover {
+  background-color: #1b66c9;
+  box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15);
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 100%;
+}
+
+.logo-google {
+  width: 272px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 584px;
+  height: 48px;
+  gap: 13px;
+  padding: 0px 14px;
+}
+
+.input:hover,
+.input:focus-within {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: transparent;
+}
+
+.icone-lupa svg {
+  width: 20px;
+  height: 20px;
+  fill: #9aa0a6;
+  display: block;
+}
+
+.area-texto {
+  font-family: inherit;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.icones-input {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icones-input div {
+  position: relative;
+  cursor: pointer;
+}
+
+.icones-input svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.icone-teclado:hover::after {
+  content: "Ferramentas de introdução";
+}
+.icone-microfone:hover::after {
+  content: "Pesquisa por voz";
+}
+.icone-camera:hover::after {
+  content: "Pesquisar por imagem";
+}
+
+.icone-teclado:hover::after,
+.icone-microfone:hover::after,
+.icone-camera:hover::after {
+  position: absolute;
+  border-radius: 4px;
+  background-color: #4f5355;
+  font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 5px 10px;
+  width: max-content;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 10px);
+}
+
+.botoes-pesquisa {
+  display: flex;
+  gap: 8px;
+}
+
+.botao-pesquisa {
+  background-color: #f8f9fa;
+  border: solid 1px #f8f9fa;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: inherit;
+  color: #3c4043;
+}
+
+.botao-pesquisa:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+}
+
+.texto-disponibilizado {
+  display: flex;
+  gap: 5px;
+  font-size: 13px;
+  color: #4d5156;
+  margin-bottom: 10vh;
+}
+
+.texto-disponibilizado a {
+  text-decoration: none;
+  color: #1a0dab;
+}
+
+.texto-disponibilizado a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  background-color: #f2f2f2;
+}
+
+.pais {
+  border-bottom: 1px solid #dadce0;
+}
+
+.pais,
+.informacoes {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.informacoes div {
+  display: flex;
+  gap: 30px;
+}
+
+.informacoes a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.informacoes a:hover {
+  text-decoration: underline;
+}
